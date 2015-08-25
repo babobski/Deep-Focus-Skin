@@ -1,0 +1,34 @@
+# Override LESS config files
+override chrome://komodo/skin/_config/window.less       chrome://DeepFocus/skin/_config/window.less
+override chrome://komodo/skin/_config/toolbars.less     chrome://DeepFocus/skin/_config/toolbars.less
+override chrome://komodo/skin/_config/tabs.less         chrome://DeepFocus/skin/_config/tabs.less
+override chrome://komodo/skin/_config/panes.less        chrome://DeepFocus/skin/_config/panes.less
+override chrome://komodo/skin/_config/modules.less      chrome://DeepFocus/skin/_config/modules.less
+override chrome://komodo/skin/_config/icons.less        chrome://DeepFocus/skin/_config/icons.less
+override chrome://komodo/skin/_config/menus.less        chrome://DeepFocus/skin/_config/menus.less
+override chrome://komodo/skin/_config/scrollbars.less   chrome://DeepFocus/skin/_config/scrollbars.less
+
+# Override LESS rules
+override chrome://komodo/skin/window.less               chrome://DeepFocus/skin/window.less
+override chrome://komodo/skin/panes.less                chrome://DeepFocus/skin/panes.less
+override chrome://komodo/skin/tabs.less                 chrome://DeepFocus/skin/tabs.less
+override chrome://komodo/skin/toolbars.less             chrome://DeepFocus/skin/toolbars.less
+override chrome://komodo/skin/menus.less                chrome://DeepFocus/skin/menus.less
+override chrome://komodo/skin/modules.less              chrome://DeepFocus/skin/modules.less
+
+# Override images that are hard coded in the source and therefore can't be overriden with css
+override chrome://komodo/skin/images/folder-closed.png  chrome://DeepFocus/skin/images/folder.png
+override moz-icon://stock/gtk-directory?size=16         chrome://DeepFocus/skin/images/folder.png
+override chrome://komodo/skin/images/project_icon.png   chrome://DeepFocus/skin/images/folder-open.png
+override moz-icon://stock/gtk-home?size=16              chrome://DeepFocus/skin/images/folder-open.png
+override chrome://global/skin/arrow/arrow-dn.gif        chrome://global/skin/arrow/arrow-dn-dis.gif
+override chrome://global/skin/tree/columnpicker.gif     chrome://DeepFocus/skin/images/ko_cog_small.png
+override chrome://komodo/skin/images/cbox-check.gif     chrome://DeepFocus/skin/images/checkbox-checked.png
+override chrome://komodo/skin/images/boldButton.png     chrome://DeepFocus/skin/images/bold2.png
+override chrome://komodo/skin/images/italicButton.png   chrome://DeepFocus/skin/images/italic2.png
+
+
+# platform specific override - this gets a bit hacky
+# see: https://developer.mozilla.org/en/docs/Chrome_Registration#platform_.28Platform-specific_packages.29
+content  DeepFocus-platform                                 ../platform/     platform
+override chrome://komodo/skin/platform.less             chrome://DeepFocus-platform/content/platform.less
