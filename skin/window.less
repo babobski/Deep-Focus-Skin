@@ -34,7 +34,7 @@ button
 
 minimap
 {
-    border-left: 1px solid @main-border-color !important;
+    border-left: 1px solid #353535 !important;
 }
 
 page :not(toolbarbutton):not(toolbaritem),
@@ -91,10 +91,19 @@ dialog#dialog-featurecontrolpanel {
     }
 }
 
+#view-quickstart .editor-field button {
+    background-color: #606060 !important;
+    background-image: none;
+}
+
 #main-toolboxrow-wrapper #toggleLeftPane[checked="true"] {
     list-style-image: url('chrome://DeepFocus/skin/images/ko_layout-left4.png') !important;
 }
 
 #main-toolboxrow-wrapper #toggleRightPane[checked="true"] {
     list-style-image: url('chrome://DeepFocus/skin/images/ko_layout-right4.png') !important;
+}
+
+#main-toolboxrow-wrapper #toggleBottomPane[checked="true"] {
+    list-style-image: url('chrome://DeepFocus/skin/images/ko_layout-bottom4.png') !important;
 }
