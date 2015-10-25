@@ -91,10 +91,33 @@ dialog#dialog-featurecontrolpanel {
     }
 }
 
-#view-quickstart .editor-field button {
-    background-color: #606060 !important;
-    background-image: none;
+/** #quicksttart fix */
+vbox[anonid="quickstart"] {
+    .editor-field {
+        background: #282828;
+        background: linear-gradient(to bottom,  #2c2c2c 0%,#2c2c2c 99%);
+    }
+    .inner, .footer {
+       button:not(.button-toolbar-a):not(.button-toolbar-b):not(.button-toolbar-c):not(.button-toolbar-d):not(.button-link):not(.button-plain):not([type="menu"]),
+        {
+            border-color: #232323;
+            background-color: #232323 !important;
+            margin-bottom: 5px !important;
+            button {
+                margin-bottom: 0 !important;
+            }
+            &:hover {
+                background-color: #222 !important;
+                border-color: #292929;
+            }
+        }
+    }
+    .footer {
+        background-color: #2c2c2c !important;
+    }
 }
+
+
 
 #main-toolboxrow-wrapper #toggleLeftPane[checked="true"] {
     list-style-image: url('chrome://DeepFocus/skin/images/ko_layout-left4.png') !important;
