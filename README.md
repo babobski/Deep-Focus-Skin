@@ -9,11 +9,11 @@ The contrast between the code and the background was to hard, so i create a ligh
 
 ## Color schemes
 Converted a few color schemes for the Deep focus skin.
-* Dracula
-* Monokai
-* Monokai purple
-* Soda dark
-* Flasty
+* Dracula - by me
+* Monokai - by [Defman21](https://github.com/Defman21)  
+* Monokai purple - by [Defman21](https://github.com/Defman21)  
+* Soda dark - by [Defman21](https://github.com/Defman21)  
+* Flasty - by [Defman21](https://github.com/Defman21)  
 
 They can be found [here](https://github.com/babobski/Deep-focus-color-schemes).
 
