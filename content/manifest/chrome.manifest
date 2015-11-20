@@ -26,6 +26,7 @@ override chrome://global/skin/tree/columnpicker.gif     chrome://DeepFocus/skin/
 override chrome://komodo/skin/images/cbox-check.gif     chrome://DeepFocus/skin/images/checkbox-checked.png
 override chrome://komodo/skin/images/boldButton.png     chrome://DeepFocus/skin/images/bold2.png
 override chrome://komodo/skin/images/italicButton.png   chrome://DeepFocus/skin/images/italic2.png
+override chrome://global/skin/icons/close.png			chrome://DeepFocus/skin/images/close2.png
 
 
 # platform specific override - this gets a bit hacky

@@ -65,6 +65,11 @@ window#komodo_main :not(toolbarbutton):not(toolbaritem)
     }
 }
 
+separator.groovy-thin,
+separator.groove {
+  border-color: rgba(220, 220, 220, 0.1) !important;
+}
+
 notification
 {
     -moz-appearance: @window-appearance;
@@ -196,3 +201,17 @@ vbox[anonid="quickstart"] {
     max-width: none !important;
 }
 
+#openfilesListbox richlistitem.group-item {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.1) !important;
+}
+
+#openfilesListbox richlistitem.split-item {
+    border-top: 1px solid rgba(220, 220, 220, 0.1) !important;
+}
+
+toolbarbutton.file-close-button:hover {
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+toolbarbutton.file-close-button:active {
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
