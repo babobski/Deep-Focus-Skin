@@ -34,7 +34,7 @@
 /* separators */
 @separator-border-width:                1px 0;
 @separator-border-style:                solid;
-@separator-border-color:                fadeout(@main-border-color, 50%) #222 fadeout(@main-border-color, 80%);
+@separator-border-color:                fadeout(@main-border-color, 50%) #444 fadeout(@main-border-color, 80%);
 
 @button-appearance:                     none;
 @toolbarbutton-appearance:              none;
@@ -74,16 +74,16 @@
 @textbox-background:                    lighten(@window-background, 5%);
 @textbox-color:                         #F2F2F2;
 @textbox-box-shadow:                    none;
-@textbox-border:                        1px solid darken(@window-background, 2%);
+@textbox-border:                        1px solid lighten(@window-background, 12%);
 @textbox-border-radius:                 4px;
 
 @textbox-background-disabled:           lighten(@window-background, 3%);
 @textbox-color-disabled:                fade(@textbox-color, 50%);
-@textbox-border-disabled:               1px solid darken(@window-background, 1%);
+@textbox-border-disabled:               1px solid lighten(@window-background, 8%);
 
 @checkbox-appearance:                   none;
 @checkbox-color:                        @window-color;
-@checkbox-background-hover:             darken(@window-background, 2%);
+@checkbox-background-hover:             lighten(@window-background, 5%);
 @checkbox-label-box-appearance:         none;
 @checkbox-check-spacer-appearance:      none;
 @checkbox-check-spacer-border:          0;
@@ -95,7 +95,7 @@
 
 @radio-appearance:                   none;
 @radio-color:                        @window-color;
-@radio-background-hover:             darken(@window-background, 2%);
+@radio-background-hover:             lighten(@window-background, 2%);
 @radio-label-box-appearance:         none;
 @radio-check-appearance:             none;
 @radio-check-border:                 0;
