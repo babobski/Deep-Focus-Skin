@@ -17,16 +17,20 @@ override chrome://komodo/skin/menus.less                chrome://DeepFocus/skin/
 override chrome://komodo/skin/modules.less              chrome://DeepFocus/skin/modules.less
 
 # Override images that are hard coded in the source and therefore can't be overriden with css
-override chrome://komodo/skin/images/folder-closed.png  chrome://DeepFocus/skin/images/folder.png
-override moz-icon://stock/gtk-directory?size=16         chrome://DeepFocus/skin/images/folder.png
-override chrome://komodo/skin/images/project_icon.png   chrome://DeepFocus/skin/images/folder-open.png
-override moz-icon://stock/gtk-home?size=16              chrome://DeepFocus/skin/images/folder-open.png
-override chrome://global/skin/arrow/arrow-dn.gif        chrome://global/skin/arrow/arrow-dn-dis.gif
-override chrome://global/skin/tree/columnpicker.gif     chrome://DeepFocus/skin/images/ko_cog_small.png
-override chrome://komodo/skin/images/cbox-check.gif     chrome://DeepFocus/skin/images/checkbox-checked.png
-override chrome://komodo/skin/images/boldButton.png     chrome://DeepFocus/skin/images/bold2.png
-override chrome://komodo/skin/images/italicButton.png   chrome://DeepFocus/skin/images/italic2.png
-override chrome://global/skin/icons/close.png			chrome://DeepFocus/skin/images/close2.png
+override chrome://komodo/skin/images/folder-closed.png  		chrome://DeepFocus/skin/images/folder.png
+override moz-icon://stock/gtk-directory?size=16         		chrome://DeepFocus/skin/images/folder.png
+override chrome://komodo/skin/images/project_icon.png   		chrome://DeepFocus/skin/images/folder-open.png
+override moz-icon://stock/gtk-home?size=16              		chrome://DeepFocus/skin/images/folder-open.png
+override chrome://global/skin/arrow/arrow-dn.gif        		chrome://global/skin/arrow/arrow-dn-dis.gif
+override chrome://global/skin/tree/columnpicker.gif     		chrome://DeepFocus/skin/images/ko_cog_small.png
+override chrome://komodo/skin/images/cbox-check.gif     		chrome://DeepFocus/skin/images/checkbox-checked.png
+override chrome://komodo/skin/images/boldButton.png     		chrome://DeepFocus/skin/images/bold2.png
+override chrome://komodo/skin/images/italicButton.png   		chrome://DeepFocus/skin/images/italic2.png
+override chrome://komodo/skin/images/scrollArrowRight.png   	chrome://DeepFocus/skin/images/arrow-right3.png
+override chrome://komodo/skin/images/scrollArrowRight-mini.png  chrome://DeepFocus/skin/images/arrow-right3.png
+override chrome://komodo/skin/images/more.gif					chrome://DeepFocus/skin/images/arrow-down2.png
+override chrome://komodo/skin/images/less.gif					chrome://DeepFocus/skin/images/arrow-up2.png
+override chrome://global/skin/icons/close.png					chrome://DeepFocus/skin/images/close2.png
 
 
 # platform specific override - this gets a bit hacky
