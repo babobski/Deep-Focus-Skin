@@ -1,0 +1,1466 @@
+/* Start backwards compatibility - DO NOT USE THESE VARIABLES */
+/* Stop backwards compatibility - DO NOT USE THESE VARIABLES */
+/* Action Icons */
+/* Folder Icons */
+/* SCC File Symbols */
+/* Subpanel icons (Places projects subpanel) */
+/* Scrolltabs */
+/* File/Folder actions */
+/* Buffer Actions */
+/* Editing Icons */
+/* Global Symbols */
+/* Menu Specific Icons */
+/* Browser Icons */
+/* Miscellaneous */
+/* OSX Only */
+/* Toolbars - Standard */
+/* Toolbars - Tools */
+/* Toolbars - Workspace */
+/* Toolbars - SCC */
+/* Toolbars - Debug */
+/* Toolbars - Macro's */
+/* Toolbars - Komodo Resources */
+/* Addon Icons */
+/* SCC Icons */
+/* Debug Icons */
+/* Unit Test Icons */
+/* Macro Icons */
+/* Breakpoint Icons */
+/* Sync Icons */
+/* Widget Icons */
+/* Notification Widget */
+/* Code Browser Widget */
+/* DOM Browser Widget */
+/* Database Widget */
+/* Collaboration Widget */
+/* Collaboration Widget */
+/* Syntax checking widget */
+/* Find Results Widget */
+/* Breadcrumbs */
+/* Pref Icons */
+/**
+ * Syntax checking statusbar images
+ */
+/* Hud Icons */
+/* Workspace Icons */
+/* Breadcrumbs */
+/* Force icon size for HiDPI displays */
+button[class$='-icon'] image:not(.autorepeatbutton-icon),
+toolbarbutton[class$='-icon'] image:not(.autorepeatbutton-icon),
+menuitem[class$='-icon'] image:not(.autorepeatbutton-icon),
+tab[class$='-icon'] image:not(.autorepeatbutton-icon),
+button [class$='-icon'] image:not(.autorepeatbutton-icon),
+toolbarbutton [class$='-icon'] image:not(.autorepeatbutton-icon),
+menuitem [class$='-icon'] image:not(.autorepeatbutton-icon),
+tab [class$='-icon'] image:not(.autorepeatbutton-icon),
+button[class$='_icon'] image:not(.autorepeatbutton-icon),
+toolbarbutton[class$='_icon'] image:not(.autorepeatbutton-icon),
+menuitem[class$='_icon'] image:not(.autorepeatbutton-icon),
+tab[class$='_icon'] image:not(.autorepeatbutton-icon),
+button [class$='_icon'] image:not(.autorepeatbutton-icon),
+toolbarbutton [class$='_icon'] image:not(.autorepeatbutton-icon),
+menuitem [class$='_icon'] image:not(.autorepeatbutton-icon),
+tab [class$='_icon'] image:not(.autorepeatbutton-icon),
+button image[class$='-icon']:not(.autorepeatbutton-icon),
+toolbarbutton image[class$='-icon']:not(.autorepeatbutton-icon),
+menuitem image[class$='-icon']:not(.autorepeatbutton-icon),
+tab image[class$='-icon']:not(.autorepeatbutton-icon),
+button image[class$='-icon']:not(.autorepeatbutton-icon),
+toolbarbutton image[class$='-icon']:not(.autorepeatbutton-icon),
+menuitem image[class$='-icon']:not(.autorepeatbutton-icon),
+tab image[class$='-icon']:not(.autorepeatbutton-icon),
+button image[class$='_icon']:not(.autorepeatbutton-icon),
+toolbarbutton image[class$='_icon']:not(.autorepeatbutton-icon),
+menuitem image[class$='_icon']:not(.autorepeatbutton-icon),
+tab image[class$='_icon']:not(.autorepeatbutton-icon),
+button image[class$='_icon']:not(.autorepeatbutton-icon),
+toolbarbutton image[class$='_icon']:not(.autorepeatbutton-icon),
+menuitem image[class$='_icon']:not(.autorepeatbutton-icon),
+tab image[class$='_icon']:not(.autorepeatbutton-icon) {
+  max-width: 16px;
+}
+.toolbarbutton-icon,
+.button-icon,
+.menu-iconic-icon,
+treechildren::-moz-tree-image,
+.textbox-search-icon,
+.native_file_image,
+dropmarker > image {
+  max-width: 16px;
+}
+#main-toolboxrow toolbarbutton > image,
+#main-toolboxrow toolbarbutton .toolbarbutton-icon {
+  width: 16px;
+  max-width: none;
+}
+toolbarbutton image #placesViewbox_placesWrapper #findresults_tabpanel-toolbarbox.toolbarbutton-icon,
+toolbarbutton image .panel-toolbar-buttons.toolbarbutton-icon,
+button image #placesViewbox_placesWrapper #findresults_tabpanel-toolbarbox.toolbarbutton-icon,
+button image .panel-toolbar-buttons.toolbarbutton-icon {
+  max-width: 14px;
+}
+/* Icon Tweaks */
+treechildren::-moz-tree-image(project-icon),
+#placesSubpanelProjectsTreechildren_SPV::-moz-tree-image {
+  margin-right: 5px;
+}
+/* Icon Values */
+treechildren::-moz-tree-image(project-icon),
+.project-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder4.svg") !important;
+}
+/* GLOBAL */
+button[type="moreinfo"] > .button-box > .button-icon {
+  margin-right: 0px;
+  margin-left: 2px;
+}
+button[class$='-icon'][disabled="true"] > image,
+toolbarbutton[class$='-icon'][disabled="true"] > image,
+menuitem[class$='-icon'][disabled="true"] > image,
+button [class$='-icon'][disabled="true"] > image,
+toolbarbutton [class$='-icon'][disabled="true"] > image,
+menuitem [class$='-icon'][disabled="true"] > image,
+button[class$='_icon'][disabled="true"] > image,
+toolbarbutton[class$='_icon'][disabled="true"] > image,
+menuitem[class$='_icon'][disabled="true"] > image,
+button [class$='_icon'][disabled="true"] > image,
+toolbarbutton [class$='_icon'][disabled="true"] > image,
+menuitem [class$='_icon'][disabled="true"] > image {
+  opacity: 0.6;
+}
+/* Allow the icons in menus to determine for themselves what height they require */
+.menu-iconic-icon {
+  height: auto;
+}
+/* Enforce 16px height for checked menuitem's as they use background-image
+ * instead of list-style-image, which requires fixed dimensions */
+:not(menulist) > menupopup > :-moz-any(menuitem[selected="true"], menuitem[checked="true"]) > .menu-iconic-left .menu-iconic-icon {
+  height: 16px;
+}
+/* Check / Radio items */
+menuitem[type="checkbox"] > .menu-iconic-left {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/checkbox-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  min-height: 16px;
+}
+menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/checkbox-checked.svg");
+}
+menuitem.languageicon[type="checkbox"] > .menu-iconic-left {
+  background-position: top left !important;
+}
+menuitem[type="radio"] > .menu-iconic-left {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/radio-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 16px;
+  min-height: 16px;
+}
+menuitem[type="radio"][checked="true"] > .menu-iconic-left,
+menuitem[type="radio"][selected="true"] > .menu-iconic-left {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/radio-checked.svg");
+}
+/* Tree Checkboxes */
+/* Small */
+treechildren::-moz-tree-image(col-checkbox) {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark2.svg?preset=base&iconset=light");
+  opacity: 0.4;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+}
+treechildren::-moz-tree-image(col-checkbox, checked) {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark.svg?preset=base&iconset=light");
+}
+treechildren::-moz-tree-image(col-checkbox, parent-checked),
+treechildren::-moz-tree-image(col-checkbox, no-parent) {
+  opacity: 1.0;
+}
+treechildren::-moz-tree-image(col-checkbox, checked, parent-checked),
+treechildren::-moz-tree-image(col-checkbox, checked, no-parent) {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark.svg?preset=base&iconset=light");
+}
+/* Regular */
+treechildren::-moz-tree-checkbox {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkbox-unchecked.svg") !important;
+}
+treechildren::-moz-tree-checkbox(checked) {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkbox-checked.svg") !important;
+}
+treechildren::-moz-tree-checkbox(nocheckbox),
+treechildren::-moz-tree-checkbox(sccLoading),
+treechildren::-moz-tree-checkbox(sccError),
+treechildren::-moz-tree-checkbox(syncLoading),
+treechildren::-moz-tree-checkbox(syncError) {
+  list-style-image: none !important;
+}
+/* Menu Icons */
+menu .menu-right {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg");
+}
+/* Folder Icons */
+.upfolder-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/upLevel.png");
+}
+.new-folder-icon,
+.newfolder-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder-plus3.svg?preset=base&iconset=light");
+}
+menulist dropmarker,
+textbox[type="autocomplete"] dropmarker,
+.button-menubutton-dropmarker,
+.toolbarbutton-menu-dropmarker {
+  -moz-appearance: none !important;
+  background-color: transparent;
+  border: 0;
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down2.svg?preset=base&iconset=light") !important;
+  width: 14px;
+  height: 14px;
+}
+/* General Icons */
+.refresh-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/refresh.png");
+}
+.goback-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/goBack.png");
+}
+.warning-icon {
+  list-style-image: url("chrome://global/skin/icons/Warning.png");
+}
+.small-warning-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/warning_small.png");
+  min-height: 16px;
+}
+.question-icon {
+  list-style-image: url("chrome://global/skin/icons/Question.png");
+}
+.native-help-icon,
+.help-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/question4.svg?preset=base&iconset=light");
+}
+.docs-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/book2.svg?preset=base&iconset=light");
+}
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  list-style-image: none;
+}
+menu .help-icon,
+menuitem .help-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/question2.svg?preset=base&iconset=light");
+}
+.double-down-icon,
+.more-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down2.svg?preset=base&iconset=light");
+}
+.double-up-icon,
+.less-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up2.svg?preset=base&iconset=light");
+}
+.arrow-right-small-icon {
+  list-style-image: none;
+}
+.arrow-right-small-icon image {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg?preset=base&iconset=light");
+  background-position: center;
+  width: 8px;
+  height: 8px;
+}
+.project-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder4.svg");
+}
+.server-pref-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/serverAccount.png");
+}
+.preview-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/preview.png");
+}
+.refreshFile-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/refreshFile.png");
+}
+.configure-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/cog_edit.png");
+}
+.properties-icon {
+  list-style-image: url("chrome://komodo/skin/global/images/cog.png");
+}
+.clear-text-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/clear-formatting.svg?preset=base&iconset=light");
+}
+.bulletlist-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/list.svg?preset=base&iconset=light") !important;
+}
+.bulletlist-icon[disabled="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/list.svg?preset=base&iconset=light") !important;
+}
+.scrollright-arrow-mini-icon {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight-mini.png");
+}
+.scroll-arrow-right-icon {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight.png");
+}
+.scroll-arrow-right-icon:hover {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight_hover.png");
+}
+.scroll-arrow-right-icon[disabled="true"],
+.scroll-arrow-right-icon[disabled="true"]:hover,
+.scroll-arrow-right-icon[disabled="true"]:hover:active {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight_disable.png");
+}
+.scroll-arrow-left-icon {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowLeft.png");
+}
+.scroll-arrow-left-icon:hover {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowLeft_hover.png");
+}
+.scroll-arrow-left-icon[disabled="true"],
+.scroll-arrow-left-icon[disabled="true"]:hover,
+.scroll-arrow-left-icon[disabled="true"]:hover:active {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowLeft_disable.png");
+}
+.colorbg-icon {
+  list-style-image: url("chrome://komodo/skin/images/colorbg.png");
+}
+.boldtext-icon {
+  list-style-image: url("chrome://komodo/skin/images/boldButton.png");
+}
+.boldtext-icon[disabled="true"] {
+  list-style-image: url("chrome://komodo/skin/images/boldButton_disable.png");
+}
+.italictext-icon {
+  list-style-image: url("chrome://komodo/skin/images/italicButton.png");
+}
+.italictext-icon[disabled="true"] {
+  list-style-image: url("chrome://komodo/skin/images/italicButton_disable.png");
+}
+.find-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=base&iconset=light") !important;
+}
+.find-stop-icon[disabled="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=base&iconset=light") !important;
+}
+.find-undo-icon,
+.native-undo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/undo2.svg?preset=base&iconset=light");
+}
+.native-redo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/redo2.svg?preset=base&iconset=light");
+}
+.find-copy-icon {
+  list-style-image: url("chrome://fugue/skin/icons/clipboard--plus.png");
+}
+/* TODO: disabled versions of these */
+.find-lock-icon {
+  list-style-image: url("chrome://fugue/skin/icons/lock-unlock.png");
+}
+.find-lock-icon[locked="true"] {
+  list-style-image: url("chrome://fugue/skin/icons/lock.png");
+}
+.new-project-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder4.svg");
+}
+.new-file-icon,
+.native-new-file-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file-plus.svg?preset=base&iconset=light") !important;
+}
+.new-window-icon {
+  list-style-image: url("chrome://komodo/skin/images/komodo_16x16.png");
+}
+.native_open_icon,
+.open-file-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder-open.svg?preset=base&iconset=light") !important;
+}
+.native_folder_icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder.svg");
+}
+#invoketool_toolbar_options,
+.collab-sessions-menu-icon,
+.codeintel-settings-button,
+.project-tools-icon,
+.preferences-icon,
+page .cog-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/cog.svg?preset=base&iconset=light") !important;
+}
+.customize-panes-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/grid3.svg?preset=base&iconset=light");
+}
+.packages-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/box-add.svg?preset=base&iconset=light");
+}
+.new-template-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file6.svg?preset=base&iconset=light") !important;
+}
+.save-buffer-icon,
+.native-save-icon {
+  list-style-image: url("chrome://komodo/skin/images/save.png");
+}
+.run-command-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=base&iconset=light");
+}
+.power-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/power.svg?preset=base&iconset=light");
+}
+.icon-markdown {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/text-color.svg?preset=base&iconset=light");
+}
+.next-buffer-icon {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight.png");
+}
+.next-buffer-icon[disabled="true"] {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowRight_disable.png");
+}
+.previous-buffer-icon {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowLeft.png");
+}
+.previous-buffer-icon[disabled="true"] {
+  list-style-image: url("chrome://komodo/skin/images/scrollArrowLeft_disable.png");
+}
+.list-item-down-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/caret-down.svg?preset=base&iconset=light") !important;
+}
+.list-item-up-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/caret-up.svg?preset=base&iconset=light") !important;
+}
+.list-item-add-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/plus.svg?preset=base&iconset=light") !important;
+}
+.list-item-edit-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/pencil.svg?preset=base&iconset=light") !important;
+}
+.list-item-remove-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/close.svg?preset=base&iconset=light") !important;
+}
+.green-undo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/undo.svg?preset=base&iconset=light");
+}
+button[type="moreinfo"][open="true"] {
+  list-style-image: url("chrome://komodo/skin/images/less.gif");
+}
+button[type="moreinfo"] {
+  list-style-image: url("chrome://komodo/skin/images/more.gif");
+}
+.remote-folder-icon,
+treechildren::-moz-tree-image(remotefolder) {
+  list-style-image: url('chrome://komodo/skin/images/folder-closed.png');
+}
+.remote-file-icon,
+treechildren::-moz-tree-image(remotefile) {
+  list-style-image: url('chrome://komodo/skin/images/file_icon.png');
+}
+.small-stop-sign-icon {
+  list-style-image: url("chrome://komodo/skin/images/find_stop.png");
+}
+.small-cut-icon {
+  list-style-image: url("chrome://komodo/skin/images/cut.png");
+}
+.textbox-search-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/search3.svg?preset=base&iconset=light");
+}
+.bug-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/bug.svg?preset=base&iconset=light");
+}
+/* Komodo icons */
+.komodo-16x16 {
+  list-style-image: url("chrome://komodo/skin/images/komodo_16x16.png");
+}
+/* Browser icons */
+.browser-firefox-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/firefox.svg?preset=base&iconset=light");
+}
+.browser-camino-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.browser-internetexplorer-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/IE.svg?preset=base&iconset=light");
+}
+.browser-konqueror-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.browser-mozilla-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.browser-msnexplorer-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.browser-netscape-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.browser-opera-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/opera.svg?preset=base&iconset=light");
+}
+.browser-safari-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/safari.svg?preset=base&iconset=light");
+}
+.browser-googlechrome-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/chrome.svg?preset=base&iconset=light");
+}
+/* Toolbars */
+#main-toolboxrow-wrapper {
+  /* Addon Icons */
+}
+#main-toolboxrow-wrapper .history-back-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-left3.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .history-forward-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right4.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .native-undo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/undo2.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .native-redo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/redo2.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .native-new-file-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file-plus.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .native_open_icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder-open.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .native-save-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_save.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .save-all-buffers-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_save-all.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .cut-button,
+#main-toolboxrow-wrapper .native-cut-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/scissors.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .copy-button,
+#main-toolboxrow-wrapper .native-copy-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/files.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .paste-button,
+#main-toolboxrow-wrapper .native-paste-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/paste2.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .print-button,
+#main-toolboxrow-wrapper .native-print-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/print.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .native-help-icon,
+#main-toolboxrow-wrapper .help-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/question2.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper #buttonBrowserPreview {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .rx-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_regexp.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .http-inspector {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_http_inspector.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .ishell-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .docs-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/book2.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .power-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/power.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .icon-markdown {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/text-color.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper #tb_tdkTclMenu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/quill3.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper #tb_pdkPerlMenu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_perl.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper #toggleLeftPane {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-left3.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleRightPane {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-right3.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleBottomPane {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-bottom3.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleLeftPane[checked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-left4.svg?preset=selected&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleRightPane[checked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-right4.svg?preset=selected&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleBottomPane[checked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-bottom4.svg?preset=selected&iconset=light");
+}
+#main-toolboxrow-wrapper .tabPicker-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_tab-down.svg?preset=toolbar&iconset=light");
+}
+#main-toolboxrow-wrapper .scc-button-menu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_menu2.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-checkout {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_checkout.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-add {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_add.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-edit {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_edit2.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-revert {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_revert.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-remove {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_remove.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-update {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_update.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-diff {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_diff.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-history {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_history.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-commit {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_commit.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .scc-button-push {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_push.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-stepin-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-into.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-stepover-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-over.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-stepout-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-out.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-continue-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/play4.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-break-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pause2.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .debug-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-new-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/plus-circle.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-play-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/play3.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-pause-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pause.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-record-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_record.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .macro-save-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_save-circle.svg?preset=toolbar&iconset=light") !important;
+}
+#main-toolboxrow-wrapper .komodo-button-community {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/users4.svg?preset=base&iconset=light");
+}
+#main-toolboxrow-wrapper .komodo-button-maillist {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/envelop.svg?preset=base&iconset=light");
+}
+#main-toolboxrow-wrapper .komodo-button-bugs {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/bug.svg?preset=base&iconset=light");
+}
+#main-toolboxrow-wrapper .menu-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/menu7.svg?preset=toolbar&iconset=light") !important;
+}
+statusbar .menu-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/menu7.svg?preset=toolbar&iconset=light") !important;
+}
+/* Icons that appear in menu's and misc places */
+#buttonBrowserPreview {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/earth.svg?preset=base&iconset=light");
+}
+.save-all-buffers-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_save-all.svg?preset=base&iconset=light");
+}
+.cut-button,
+.native-cut-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/scissors.svg?preset=base&iconset=light");
+}
+.copy-button,
+.native-copy-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/files.svg?preset=base&iconset=light");
+}
+.paste-button,
+.native-paste-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/paste2.svg?preset=base&iconset=light");
+}
+.print-button,
+.native-print-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/print.svg?preset=base&iconset=light");
+}
+/* Use same image for checked as the button itself already has a toggle effect */
+#pin-btn,
+#pin-btn[checked] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pushpin.svg?preset=base&iconset=light") !important;
+}
+.komodo-button-community {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/users4.svg?preset=base&iconset=light");
+}
+.komodo-button-maillist {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/envelop.svg?preset=base&iconset=light");
+}
+.komodo-button-bugs {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/bug.svg?preset=base&iconset=light");
+}
+.tabs-select-button {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_tab-down.svg?preset=base&iconset=light") !important;
+}
+.close-button,
+#tabs-closebutton,
+.tabs-closebutton,
+.tab-close-button,
+.close-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/close2.svg?preset=base&iconset=light");
+  background-image: none !important;
+}
+.close-button > image,
+#tabs-closebutton > image,
+.tabs-closebutton > image,
+.tab-close-button > image,
+.close-icon > image {
+  min-height: 16px;
+}
+.tabs-closebutton {
+  opacity: 0.5;
+}
+.tabs-closebutton:hover {
+  opacity: 1.0;
+}
+.favourite-icon {
+  list-style-image: url("chrome://famfamfamsilk/skin/icons/star.png");
+}
+box.favourite-icon {
+  background-image: url("chrome://famfamfamsilk/skin/icons/star.png");
+}
+/* Bug #100021 */
+#statusbar-message-wrap button.close-button image {
+  margin: 0;
+}
+#statusbar-message-wrap button.close-button label {
+  visibility: collapse;
+}
+.tab-arrowscrollbox .scrollbutton-up {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-left2.svg?preset=base&iconset=light");
+}
+.tab-arrowscrollbox .scrollbutton-down {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg?preset=base&iconset=light");
+}
+.tab-arrowscrollbox[orient="vertical"] .scrollbutton-up {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up2.svg?preset=base&iconset=light");
+}
+.tab-arrowscrollbox[orient="vertical"] .scrollbutton-down {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down2.svg?preset=base&iconset=light");
+}
+.tab-arrowscrollbox .scrollbutton-up > image,
+.tab-arrowscrollbox .scrollbutton-down > image {
+  -moz-appearance: none;
+}
+#main-toolboxrow .overflow-toolbarbutton .toolbarbutton-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg?preset=base&iconset=light");
+}
+/* Misc Specific Icons */
+#php_debugger_config_status_image {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=base&iconset=light");
+}
+#php_debugger_config_status_image[configured="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark.svg?preset=base&iconset=light");
+}
+#php_debugger_config_status_image[checking="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/loop4.svg?preset=base&iconset=light");
+}
+/* Images for the Diff Toolbar  */
+.previous-diff-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up16.svg?preset=base&iconset=light");
+}
+.next-diff-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down16.svg?preset=base&iconset=light");
+}
+.reveal-in-editor-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file.svg?preset=base&iconset=light");
+}
+.move-to-editor-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file-upload2.svg?preset=base&iconset=light");
+}
+.history-back-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-left3.svg?preset=base&iconset=light");
+}
+.history-forward-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right4.svg?preset=base&iconset=light");
+}
+/* Addon Icons */
+.rx-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_regexp.svg?preset=base&iconset=light");
+}
+.ishell-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=base&iconset=light") !important;
+}
+#tb_tdkTclMenu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/quill3.svg?preset=base&iconset=light") !important;
+}
+#tb_pdkPerlMenu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_perl.svg?preset=base&iconset=light") !important;
+}
+/* SCC Icons */
+.scc-button-menu {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_menu2.svg?preset=base&iconset=light") !important;
+}
+.scc-button-checkout {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_checkout.svg?preset=base&iconset=light") !important;
+}
+.scc-button-add {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_add.svg?preset=base&iconset=light") !important;
+}
+.scc-button-edit {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_edit2.svg?preset=base&iconset=light") !important;
+}
+.scc-button-revert {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_revert.svg?preset=base&iconset=light") !important;
+}
+.scc-button-remove {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_remove.svg?preset=base&iconset=light") !important;
+}
+.scc-button-update {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_update.svg?preset=base&iconset=light") !important;
+}
+.scc-button-diff {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_diff.svg?preset=base&iconset=light") !important;
+}
+.scc-button-history {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_history.svg?preset=base&iconset=light") !important;
+}
+.scc-button-commit {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_commit.svg?preset=base&iconset=light") !important;
+}
+.scc-button-push {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_scc_push.svg?preset=base&iconset=light") !important;
+}
+/* Debug Icons */
+.debug-stepin-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-into.svg?preset=base&iconset=light") !important;
+}
+.debug-stepover-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-over.svg?preset=base&iconset=light") !important;
+}
+.debug-stepout-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_step-out.svg?preset=base&iconset=light") !important;
+}
+.debug-continue-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/play4.svg?preset=base&iconset=light") !important;
+}
+.debug-break-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pause2.svg?preset=base&iconset=light") !important;
+}
+.debug-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=base&iconset=light") !important;
+}
+.debug-detach-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/forward3.svg?preset=base&iconset=light") !important;
+}
+.debug-inspect-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="starting"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="running"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/play4.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="break"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pause2.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="stopping"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkbox-partial2.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="stopped"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=base&iconset=light") !important;
+}
+.dbg_status_icon[dbg_language][dbg_status="interactive"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/last.svg?preset=base&iconset=light") !important;
+}
+#DebuggerPanelContent .show-hidden-vars-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/eye.svg?preset=base&iconset=light") !important;
+}
+/* Unit Testing */
+.edit-testplan-icon {
+  /* Requires !important due to hierarchy of platform.less - Bug #97665 */
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pencil6.svg?preset=base&iconset=light") !important;
+}
+/* Macro Icons */
+.macro-new-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/plus-circle.svg?preset=base&iconset=light") !important;
+}
+.macro-play-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/play3.svg?preset=base&iconset=light") !important;
+}
+.macro-pause-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/pause.svg?preset=base&iconset=light") !important;
+}
+.macro-record-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_record.svg?preset=base&iconset=light") !important;
+}
+.macro-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop.svg?preset=base&iconset=light") !important;
+}
+.macro-save-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_save-circle.svg?preset=base&iconset=light") !important;
+}
+/* Breakpoint Icons */
+.breakpoint-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-new-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_add.svg?preset=base&iconset=light") !important;
+}
+.spawnpoint-new-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right2.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-delete-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_remove.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-delete-all-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_delete_all.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-toggle-icon,
+.breakpoint-toggle-state-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_toggle.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-go-to-source-code-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_goto.svg?preset=base&iconset=light") !important;
+}
+.breakpoint-properties-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint_properties.svg?preset=base&iconset=light") !important;
+}
+/* Sync */
+#sync-setup,
+#sync-menu {
+  /* Requires !important due to hierarchy of platform.less - Bug #97665 */
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/spinner10.svg?preset=base&iconset=light") !important;
+}
+/* Widget Icons */
+ko-pane[type="icons"] tab {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file5.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[selected] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file5.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="openfilesViewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/files.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="openfilesViewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/files.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="placesViewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder5.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="placesViewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder5.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="codebrowserviewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_code2.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="codebrowserviewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_code2.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="dbexplorer_viewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_database.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="dbexplorer_viewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_database.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="DOMviewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_markup.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="DOMviewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_markup.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="collab-panel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_collab.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="collab-panel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_collab.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="toolbox2viewbox"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/briefcase3.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="toolbox2viewbox"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/briefcase3.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="breakpoints-tabpanel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="breakpoints-tabpanel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_breakpoint.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="runoutput-desc-tabpanel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="runoutput-desc-tabpanel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="findresults1_tabpanel"] .tab-icon,
+ko-pane[type="icons"] tab[widget="findresults2_tabpanel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/binoculars.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="findresults1_tabpanel"][selected] .tab-icon,
+ko-pane[type="icons"] tab[widget="findresults2_tabpanel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/binoculars.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="projectUnitTestsResults_tabpanel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/lab.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="projectUnitTestsResults_tabpanel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/lab.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="notifications-widget"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/info2.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="notifications-widget"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/info2.svg?preset=selected&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="klint_tabpanel"] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=widgets&iconset=light") !important;
+}
+ko-pane[type="icons"] tab[widget="klint_tabpanel"][selected] .tab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=selected&iconset=light") !important;
+}
+.newtab-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/plus.svg?preset=base&iconset=light") !important;
+}
+/* Notification Widget */
+#notificationWidget #filter-error {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/cancel-circle2.svg?preset=base&iconset=light") !important;
+}
+#notificationWidget #filter-warning {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=base&iconset=light") !important;
+}
+#notificationWidget #filter-info {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/info2.svg?preset=base&iconset=light") !important;
+}
+#notificationWidget #filter-progress {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/history.svg?preset=base&iconset=light") !important;
+}
+/* Syntax checking widget */
+#klint-disable-syntax-checking {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/blocked.svg?preset=base&iconset=light");
+}
+#klint-refresh {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/loop4.svg?preset=base&iconset=light");
+}
+/* Code Browser */
+.codeintel-locate {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_locate_small.svg?preset=base&iconset=light&size=14") !important;
+}
+/* Dom Browser Widget */
+#domviewerPane .show-attributes-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_dom_small.svg?preset=base&iconset=light&size=14") !important;
+}
+#domviewerPane .locate-node {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_locate_small.svg?preset=base&iconset=light&size=14") !important;
+}
+/* Database Widget */
+#dbExplorerPane .show-databaseAdd-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_plus_small.svg?preset=base&iconset=light&size=14") !important;
+}
+/* Collaboration Widget */
+#collab-pane .collab-sessions-add-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_plus_small.svg?preset=base&iconset=light&size=14") !important;
+}
+#collab-pane .collab-sessions-refresh-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_refresh_small.svg?preset=base&iconset=light&size=14") !important;
+}
+/* Places Widget */
+#placesViewbox_placesWrapper #placesSubpanelToggle {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down2.svg?preset=base&iconset=light") !important;
+}
+#placesViewbox_placesWrapper #placesSubpanelToggle[state="collapsed"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up2.svg?preset=base&iconset=light") !important;
+}
+#placesViewbox_placesWrapper toolbarbutton image.toolbarbutton-icon {
+  width: 14px;
+  height: 14px;
+}
+/* Find Results Widget */
+#findresults_tabpanel-toolbarbox .list-item-up-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up4.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .list-item-down-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down4.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .find-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .find-undo-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/undo2.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .find-copy-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/files.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .find-lock-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_unlocked.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox .find-lock-icon[locked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/lock.svg?preset=base&iconset=light");
+}
+#findresults_tabpanel-toolbarbox toolbarbutton image.toolbarbutton-icon {
+  width: 14px;
+  max-height: 14px;
+}
+/* Panel widget icons */
+.panel-toolbar-buttons toolbarbutton,
+.panel-toolbar-buttons button {
+  /* Button Icon */
+}
+.panel-toolbar-buttons toolbarbutton image.toolbarbutton-icon,
+.panel-toolbar-buttons button image.toolbarbutton-icon {
+  width: 14px;
+  max-height: 15px;
+}
+/**
+ * Syntax checking statusbar images.
+ */
+#statusbar-check.syntax-okay {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark-circle2.svg?preset=base&iconset=light") !important;
+}
+#statusbar-check.syntax-in-progress {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/busy4.svg?preset=base&iconset=light") !important;
+}
+#statusbar-check.syntax-warning {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=base&iconset=light") !important;
+}
+#statusbar-check.syntax-error {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/cancel-circle2.svg?preset=base&iconset=light") !important;
+}
+.hud,
+statusbar {
+  /**
+     * Syntax checking statusbar images.
+     */
+  /* Run Output Pane */
+}
+.hud .new-file-icon,
+statusbar .new-file-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file-plus.svg?preset=hud") !important;
+}
+.hud .new-template-icon,
+statusbar .new-template-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/file6.svg?preset=hud") !important;
+}
+.hud .project-icon,
+statusbar .project-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/box.svg?preset=hud") !important;
+}
+.hud .open-file-icon,
+statusbar .open-file-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/folder-open.svg?preset=hud") !important;
+}
+.hud .open-workspace-icon,
+statusbar .open-workspace-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/books.svg?preset=hud") !important;
+}
+.hud .preferences-icon,
+statusbar .preferences-icon,
+.hud .cog-icon,
+statusbar .cog-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_cog_small.svg?preset=hud&size=14") !important;
+}
+.hud .customize-panes-icon,
+statusbar .customize-panes-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/grid3.svg?preset=hud");
+}
+.hud .packages-icon,
+statusbar .packages-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/box-add.svg?preset=hud");
+}
+.hud .ko-findbar-case-sensitive,
+statusbar .ko-findbar-case-sensitive {
+  -moz-image-region: auto !important;
+}
+.hud .ko-findbar-case-sensitive[value="FOC_SENSITIVE"],
+statusbar .ko-findbar-case-sensitive[value="FOC_SENSITIVE"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/type.svg?preset=hud") !important;
+}
+.hud .ko-findbar-case-sensitive[value="FOC_INSENSITIVE"],
+statusbar .ko-findbar-case-sensitive[value="FOC_INSENSITIVE"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/font-size.svg?preset=hud") !important;
+}
+.hud .ko-findbar-case-sensitive[value="FOC_SMART"],
+statusbar .ko-findbar-case-sensitive[value="FOC_SMART"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/text-height.svg?preset=hud") !important;
+}
+.hud .ko-findbar-open-dialog,
+statusbar .ko-findbar-open-dialog {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/new-tab.svg?preset=hud") !important;
+}
+.hud .ko-findbar-next,
+statusbar .ko-findbar-next,
+.hud .down-icon,
+statusbar .down-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down4.svg?preset=hud") !important;
+}
+.hud .ko-findbar-prev,
+statusbar .ko-findbar-prev,
+.hud .up-icon,
+statusbar .up-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up4.svg?preset=hud") !important;
+}
+.hud .ko-findbar-closebutton,
+statusbar .ko-findbar-closebutton,
+.hud .close-icon,
+statusbar .close-icon {
+  -moz-image-region: auto !important;
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/close2.svg?preset=hud") !important;
+}
+.hud .ko-findbar-pattern-type,
+statusbar .ko-findbar-pattern-type {
+  -moz-image-region: auto !important;
+}
+.hud .ko-findbar-pattern-type[value="FOT_SIMPLE"],
+statusbar .ko-findbar-pattern-type[value="FOT_SIMPLE"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/quotes-right3.svg?preset=hud") !important;
+}
+.hud .ko-findbar-pattern-type[value="FOT_WILDCARD"],
+statusbar .ko-findbar-pattern-type[value="FOT_WILDCARD"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/power.svg?preset=hud") !important;
+}
+.hud .ko-findbar-pattern-type[value="FOT_REGEX_PYTHON"],
+statusbar .ko-findbar-pattern-type[value="FOT_REGEX_PYTHON"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_regexp.svg?preset=hud") !important;
+}
+.hud .power-icon,
+statusbar .power-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/power.svg?preset=hud");
+}
+.hud toolbarbutton > dropmarker,
+statusbar toolbarbutton > dropmarker {
+  visibility: collapse;
+}
+.hud menulist dropmarker,
+statusbar menulist dropmarker,
+.hud textbox[type="autocomplete"] dropmarker,
+statusbar textbox[type="autocomplete"] dropmarker,
+.hud .button-menubutton-dropmarker,
+statusbar .button-menubutton-dropmarker {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down2.svg?preset=hud") !important;
+}
+.hud .help-icon,
+statusbar .help-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/question4.svg?preset=hud");
+}
+.hud .bug-icon,
+statusbar .bug-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/bug.svg?preset=hud");
+}
+.hud #statusbar-check.syntax-okay,
+statusbar #statusbar-check.syntax-okay {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/checkmark.svg?preset=hud") !important;
+}
+.hud #statusbar-check.syntax-in-progress,
+statusbar #statusbar-check.syntax-in-progress {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/busy4.svg?preset=hud") !important;
+}
+.hud #statusbar-check.syntax-warning,
+statusbar #statusbar-check.syntax-warning {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=hud") !important;
+}
+.hud #statusbar-check.syntax-error,
+statusbar #statusbar-check.syntax-error {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/cancel-circle2.svg?preset=hud") !important;
+}
+.hud .bulletlist-icon,
+statusbar .bulletlist-icon {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/list.svg?preset=hud") !important;
+}
+.hud .bulletlist-icon[disabled="true"],
+statusbar .bulletlist-icon[disabled="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/fontawesome/skin/list.svg?preset=hud") !important;
+}
+.hud .find-stop-icon,
+statusbar .find-stop-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=hud") !important;
+}
+.hud .find-stop-icon[disabled="true"],
+statusbar .find-stop-icon[disabled="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/stop2.svg?preset=hud") !important;
+}
+.hud .run-command-icon,
+statusbar .run-command-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/console.svg?preset=hud");
+}
+.wordspace_open_icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/books.svg?preset=base&iconset=light");
+}
+/* Find/Replace icons */
+#find2-window checkbox#opt-regex,
+#find2-window checkbox#opt-case,
+#find2-window checkbox#opt-word,
+#find2-window checkbox#opt-multiline,
+#find2-window checkbox#opt-repl,
+#find2-window checkbox#confirm-replacements-in-files,
+#find2-window checkbox#show-replace-all-results,
+#find2-window checkbox#search-in-subdirs {
+  opacity: 0.8;
+}
+#find2-window checkbox#opt-regex,
+#find2-window checkbox#opt-case,
+#find2-window checkbox#opt-word,
+#find2-window checkbox#opt-multiline,
+#find2-window checkbox#opt-repl,
+#find2-window checkbox#confirm-replacements-in-files,
+#find2-window checkbox#show-replace-all-results,
+#find2-window checkbox#search-in-subdirs,
+#find2-window checkbox#opt-regex .checkbox-spacer-box,
+#find2-window checkbox#opt-case .checkbox-spacer-box,
+#find2-window checkbox#opt-word .checkbox-spacer-box,
+#find2-window checkbox#opt-multiline .checkbox-spacer-box,
+#find2-window checkbox#opt-repl .checkbox-spacer-box,
+#find2-window checkbox#confirm-replacements-in-files .checkbox-spacer-box,
+#find2-window checkbox#show-replace-all-results .checkbox-spacer-box,
+#find2-window checkbox#search-in-subdirs .checkbox-spacer-box,
+#find2-window checkbox#opt-regex .checkbox-check,
+#find2-window checkbox#opt-case .checkbox-check,
+#find2-window checkbox#opt-word .checkbox-check,
+#find2-window checkbox#opt-multiline .checkbox-check,
+#find2-window checkbox#opt-repl .checkbox-check,
+#find2-window checkbox#confirm-replacements-in-files .checkbox-check,
+#find2-window checkbox#show-replace-all-results .checkbox-check,
+#find2-window checkbox#search-in-subdirs .checkbox-check {
+  -moz-appearance: none;
+}
+#find2-window checkbox#opt-regex .checkbox-label-center-box,
+#find2-window checkbox#opt-case .checkbox-label-center-box,
+#find2-window checkbox#opt-word .checkbox-label-center-box,
+#find2-window checkbox#opt-multiline .checkbox-label-center-box,
+#find2-window checkbox#opt-repl .checkbox-label-center-box,
+#find2-window checkbox#confirm-replacements-in-files .checkbox-label-center-box,
+#find2-window checkbox#show-replace-all-results .checkbox-label-center-box,
+#find2-window checkbox#search-in-subdirs .checkbox-label-center-box,
+#find2-window checkbox#opt-regex .checkbox-label-box,
+#find2-window checkbox#opt-case .checkbox-label-box,
+#find2-window checkbox#opt-word .checkbox-label-box,
+#find2-window checkbox#opt-multiline .checkbox-label-box,
+#find2-window checkbox#opt-repl .checkbox-label-box,
+#find2-window checkbox#confirm-replacements-in-files .checkbox-label-box,
+#find2-window checkbox#show-replace-all-results .checkbox-label-box,
+#find2-window checkbox#search-in-subdirs .checkbox-label-box {
+  visibility: collapse;
+}
+#find2-window checkbox#opt-regex .checkbox-check,
+#find2-window checkbox#opt-case .checkbox-check,
+#find2-window checkbox#opt-word .checkbox-check,
+#find2-window checkbox#opt-multiline .checkbox-check,
+#find2-window checkbox#opt-repl .checkbox-check,
+#find2-window checkbox#confirm-replacements-in-files .checkbox-check,
+#find2-window checkbox#show-replace-all-results .checkbox-check,
+#find2-window checkbox#search-in-subdirs .checkbox-check {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  background-color: transparent;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+#find2-window checkbox#opt-regex:hover,
+#find2-window checkbox#opt-case:hover,
+#find2-window checkbox#opt-word:hover,
+#find2-window checkbox#opt-multiline:hover,
+#find2-window checkbox#opt-repl:hover,
+#find2-window checkbox#confirm-replacements-in-files:hover,
+#find2-window checkbox#show-replace-all-results:hover,
+#find2-window checkbox#search-in-subdirs:hover {
+  opacity: 1.0;
+}
+#find2-window checkbox#opt-regex .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_regexp.svg?preset=hud");
+}
+#find2-window checkbox#opt-regex .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_regexp.svg?preset=hud-selected");
+}
+#find2-window checkbox#opt-case .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/font-size.svg?preset=hud");
+}
+#find2-window checkbox#opt-case .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/font-size.svg?preset=hud-selected");
+}
+#find2-window checkbox#opt-case[value="smart-case"] .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/text-height.svg?preset=hud");
+}
+#find2-window checkbox#opt-case[value="smart-case"] .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/text-height.svg?preset=hud-selected");
+}
+#find2-window checkbox#opt-word .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/file-word.svg?preset=hud");
+}
+#find2-window checkbox#opt-word .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/file-word.svg?preset=hud-selected");
+}
+#find2-window checkbox#opt-multiline .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/paragraph-left3.svg?preset=hud");
+}
+#find2-window checkbox#opt-multiline .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/paragraph-left3.svg?preset=hud-selected");
+}
+#find2-window checkbox#opt-repl .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/loop.svg?preset=hud");
+}
+#find2-window checkbox#opt-repl .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/loop.svg?preset=hud-selected");
+}
+#find2-window checkbox#confirm-replacements-in-files .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=hud");
+}
+#find2-window checkbox#confirm-replacements-in-files .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/warning2.svg?preset=hud-selected");
+}
+#find2-window checkbox#show-replace-all-results .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/eye3.svg?preset=hud");
+}
+#find2-window checkbox#show-replace-all-results .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/eye3.svg?preset=hud-selected");
+}
+#find2-window checkbox#search-in-subdirs .checkbox-check {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/tree3.svg?preset=hud");
+}
+#find2-window checkbox#search-in-subdirs .checkbox-check[checked="true"] {
+  background-image: url("koicon://ko-svg/chrome/icomoon/skin/tree3.svg?preset=hud-selected");
+}
+#find2-window #pattern-shortcuts .button-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-right3.svg?preset=hud");
+}
+#find2-window #open-in-rx-btn {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/new-tab.svg?preset=hud");
+}
+#find2-window #find-next-btn .button-icon,
+#find2-window #find-prev-btn .button-icon {
+  display: inherit;
+}
+#find2-window #find-next-btn label,
+#find2-window #find-prev-btn label {
+  visibility: collapse;
+}
+#find2-window #find-next-btn {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-down4.svg?preset=hud");
+}
+#find2-window #find-prev-btn {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/arrow-up4.svg?preset=hud");
+}
+/* Find Results window */
+#findresults-filter-textbox .textbox-search-icon {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/filter3.svg?preset=base&iconset=light");
+}
+#main-toolboxrow-wrapper #toggleLeftPane[checked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-left4.svg?preset=selected&iconset=cupertino");
+}
+#main-toolboxrow-wrapper #toggleRightPane[checked="true"] {
+  list-style-image: url("koicon://ko-svg/chrome/icomoon/skin/ko_layout-right4.svg?preset=selected&iconset=cupertino");
+}
