@@ -8,7 +8,6 @@
         <em:version>1.5</em:version>
         <em:description>A dark skin for Komodo</em:description>
         <em:creator>Bob de Haas</em:creator>
-        <!--<em:iconURL>chrome://DeepFocus-skin/skin/abyss.png</em:iconURL>-->
         <em:type>2</em:type> <!-- type=extension --> 
 
         <em:targetApplication>
