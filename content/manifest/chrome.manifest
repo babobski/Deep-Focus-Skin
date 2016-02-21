@@ -30,8 +30,14 @@ override chrome://komodo/skin/images/scrollArrowRight.png   	chrome://DeepFocus/
 override chrome://komodo/skin/images/scrollArrowRight-mini.png  chrome://DeepFocus/skin/images/arrow-right3.png
 override chrome://komodo/skin/images/more.gif					chrome://DeepFocus/skin/images/arrow-down2.png
 override chrome://komodo/skin/images/less.gif					chrome://DeepFocus/skin/images/arrow-up2.png
+override chrome://komodo/skin/images/file_icon_python.png       chrome://DeepFocus/skin/imagesfile_icon_python.png
 override chrome://global/skin/icons/close.png					chrome://DeepFocus/skin/images/close2.png
 
+override chrome://komodo/skin/global/images/refresh.png             chrome://DeepFocus/skin/images/loop4.png
+override chrome://komodo/skin/global/images/upLevel.png             chrome://DeepFocus/skin/images/folder-upload.png
+override chrome://komodo/skin/global/images/newDirectory.png        chrome://DeepFocus/skin/images/folder-plus2.png
+override chrome://komodo/skin/global/images/goBack.png              chrome://DeepFocus/skin/images/arrow-left10.png
+override chrome://komodo/skin/global/images/serverAccount.png       chrome://DeepFocus/skin/images/database3.png
 
 # platform specific override - this gets a bit hacky
 # see: https://developer.mozilla.org/en/docs/Chrome_Registration#platform_.28Platform-specific_packages.29
